@@ -64,16 +64,18 @@
    python manage.py runserver
    
 ## Модель данных
-|Advertisement (Объявление)
-|Поле | Тип | Описание
-|title	| CharField | Заголовок объявления
-|description	| TextField	| Подробное описание товара
-|price	| DecimalField	| Цена товара
-|auction	| BooleanField	| Возможность торга (Да/Нет)
-|created_at | DateTimeField	| Дата и время создания
-|update_at | DateTimeField	| Дата и время последнего обновления
-|user | ForeignKey | Ссылка на пользователя (автора)
-|image	| ImageField | Изображение товара
+### Advertisement (Объявление)
+
+| Поле        | Тип           | Описание                          |
+|-------------|---------------|-----------------------------------|
+| title       | CharField     | Заголовок объявления              |
+| description | TextField     | Подробное описание товара         |
+| price       | DecimalField  | Цена товара                       |
+| auction     | BooleanField  | Возможность торга (Да/Нет)        |
+| created_at  | DateTimeField | Дата и время создания              |
+| update_at   | DateTimeField | Дата и время последнего обновления |
+| user        | ForeignKey    | Ссылка на пользователя (автора)   |
+| image       | ImageField    | Изображение товара                 |
 
 ## ⚙️ Особенности реализации
 ### Кастомизация админ-панели
